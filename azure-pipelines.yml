@@ -7,7 +7,7 @@ trigger:
 - master
 
 jobs:
-  - job: 'lint-test'
+  - job: 'linttest'
     pool:
       vmImage: ubuntu-latest
 
