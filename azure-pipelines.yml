@@ -7,7 +7,7 @@ trigger:
 - master
 
 jobs:
-  - job: 'flutter lint-test'
+  - job: 'lint-test'
     pool:
       vmImage: ubuntu-latest
 
