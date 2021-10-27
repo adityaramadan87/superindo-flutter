@@ -18,9 +18,6 @@ jobs:
         channel: 'stable'
         version: 'latest'
 
-    - script: '$(FlutterToolPath)/flutter analyze'
-      displayName: Flutter analyze
-
     - task: FlutterTest@0
       inputs:
         projectDirectory: 'superindo-flutter'
