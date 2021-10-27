@@ -12,6 +12,11 @@ jobs:
       vmImage: ubuntu-latest
 
     steps:
+    - task: FlutterInstall@0
+      inputs:
+        mode: 'auto'
+        channel: 'stable'
+        version: 'latest'
 
     - script: '$(FlutterToolPath)/flutter analyze'
       displayName: Flutter analyze
