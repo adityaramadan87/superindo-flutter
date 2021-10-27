@@ -20,7 +20,7 @@ jobs:
 
     - task: FlutterTest@0
       inputs:
-        projectDirectory: '${System.DefaultWorkingDirectory}/superindo-flutter'
+        projectDirectory: '${Build.SourcesDirectory}'
     
     - script: '$(FlutterToolPath)/flutter test --coverage'
       displayName: flutter test --coverage
