@@ -14,6 +14,7 @@ jobs:
     steps:
     - task: FlutterInstall@0
       inputs:
+        mode: 'auto'
         channel: 'stable'
         version: 'latest'
 
@@ -21,6 +22,8 @@ jobs:
       displayName: Flutter analyze
 
     - task: FlutterTest@0
+      inputs:
+        projectDirectory: 'superindo-flutter'
     
     - script: '$(FlutterToolPath)/flutter test --coverage'
       displayName: flutter test --coverage
