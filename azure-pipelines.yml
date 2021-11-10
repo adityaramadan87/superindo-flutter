@@ -17,10 +17,6 @@ jobs:
         mode: 'auto'
         channel: 'stable'
         version: 'latest'
-
-    - task: FlutterTest@0
-      inputs:
-        projectDirectory: '$(Build.SourcesDirectory)'
     
     - script: '$(FlutterToolPath)/flutter test --coverage'
       displayName: flutter test --coverage
