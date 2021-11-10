@@ -17,9 +17,6 @@ jobs:
         mode: 'auto'
         channel: 'stable'
         version: 'latest'
-    
-    - script: '$(FlutterToolPath)/flutter test --coverage'
-      displayName: flutter test --coverage
       
     - script: 'curl -O https://raw.githubusercontent.com/eriwen/lcov-to-cobertura-xml/master/lcov_cobertura/lcov_cobertura.py'
       displayName: download lcov converter
